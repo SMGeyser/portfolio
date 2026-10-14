@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Samuel Geyser — Computer Science student at BYU–Idaho. Software projects, relational databases, and AI quality assurance.">
+  <meta name="theme-color" content="#f7f7f2">
+  <title>Samuel Geyser — Software &amp; AI</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="projects.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header wrap">
+    <a class="wordmark" href="#" aria-label="Samuel Geyser, home">Samuel Geyser<span class="brand-dot">.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a>
+      <button class="theme" id="theme" aria-label="Switch to dark theme" title="Switch theme"><span aria-hidden="true">◐</span></button>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-layout">
+        <div class="hero-heading"><p class="eyebrow"><span class="status-dot"></span> Computer science · Software · AI</p><h1 id="hero-title">Useful software.<br><em>Thoughtful systems.</em></h1></div>
+        <div class="hero-portraits" tabindex="0" role="group" aria-label="Portraits of Samuel Geyser. Hover or focus to hold the current photo.">
+          <div class="portrait-slide is-active" aria-hidden="false"><img src="photos/samuel-stone.jpg" alt="Samuel Geyser in a white shirt and floral tie against a stone wall" width="4000" height="6000" fetchpriority="high"><span class="portrait-shade" aria-hidden="true"></span></div>
+          <div class="portrait-slide" aria-hidden="true"><img src="photos/samuel-mountains.jpeg" alt="Samuel Geyser smiling outdoors with snowy mountains behind him" width="4032" height="3024" decoding="async"><span class="portrait-shade" aria-hidden="true"></span></div>
+          <div class="portrait-slide" aria-hidden="true"><img src="photos/samuel-woods.jpeg" alt="Samuel Geyser in a navy shirt with a softly blurred woodland background" width="1170" height="1729" decoding="async"><span class="portrait-shade" aria-hidden="true"></span></div>
+          <div class="portrait-slide" aria-hidden="true"><img src="photos/samuel-service.jpg" alt="Samuel Geyser in a white shirt and blue tie outside a temple" width="1536" height="2048" decoding="async"><span class="portrait-shade" aria-hidden="true"></span></div>
+        </div>
+        <div class="intro">
+          <p>I’m Samuel, a Computer Science student at BYU–Idaho. I build practical web tools, work with relational data, and evaluate how AI performs in the real world.</p>
+          <div class="hero-links"><a class="primary" href="#work">Explore my work <span aria-hidden="true">↗</span></a><a class="text-link" href="Samuel_Geyser_Resume.pdf" download>Download résumé <span aria-hidden="true">↓</span></a></div>
+        </div>
+      </div>
+      <dl class="hero-facts"><div><dt>Based in</dt><dd>Rexburg, Idaho</dd></div><div><dt>Studying</dt><dd>CS + AI Engineering minor</dd></div><div><dt>Graduating</dt><dd>December 2028</dd></div></dl>
+    </section>
+    <section class="work-section wrap" id="work" aria-labelledby="work-title">
+      <div class="section-heading"><div><p class="eyebrow">Projects</p><h2 id="work-title">A few things I’ve built.</h2></div><span class="quiet small">From first principles to working tools.</span></div>
+      <div class="toolbar">
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button data-filter="Featured" aria-pressed="true">Selected</button><button data-filter="All" aria-pressed="false">All work</button><button data-filter="Web" aria-pressed="false">Web</button><button data-filter="Backend" aria-pressed="false">Backend</button><button data-filter="Data" aria-pressed="false">Data</button><button data-filter="AI & tools" aria-pressed="false">AI &amp; tools</button><button data-filter="Coursework" aria-pressed="false">Coursework</button>
+        </div>
+        <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Find a project" aria-label="Search projects"></label>
+      </div>
+      <p class="result-count quiet" id="result-count" role="status" aria-live="polite"></p>
+      <div id="projects" class="project-list"></div>
+      <div class="empty" id="empty" hidden><h3>No projects found.</h3><p>Try another keyword or explore all work.</p><button id="reset" class="text-link">Reset filters ↗</button></div>
+      <div class="work-footer"><button id="show-all" class="text-link">Explore all projects <span aria-hidden="true">↗</span></button><a href="https://github.com/SMGeyser" target="_blank" rel="noopener noreferrer" class="quiet small">GitHub <span aria-hidden="true">↗</span></a></div>
+      <noscript><p>Enable JavaScript to search and explore projects. View my repositories on <a href="https://github.com/SMGeyser">GitHub</a>.</p></noscript>
+    </section>
+    <section class="about-section wrap" id="about" aria-labelledby="about-title">
+      <div class="about-intro"><p class="eyebrow">About</p><h2 id="about-title">Curious by nature.<br><em>Careful by practice.</em></h2><p>I enjoy turning complicated information into tools people can actually use. That shows up in my property-maintenance app, tabletop game projects, and work reviewing AI responses.</p><p>Outside the code, I’ve led service crews, mentored teams, and organized community activities. Those experiences shape how I approach a project: understand the people, make the details work, and follow through.</p><div class="education"><span class="eyebrow">Education</span><strong>Brigham Young University–Idaho</strong><p>B.S. Computer Science · Minor in AI Engineering<br>Expected December 2028 · 3.99 / 4.00 GPA</p></div></div>
+      <div class="experience"><p class="eyebrow">Experience &amp; service</p>
+        <article><p class="date">Feb 2026 — Present</p><h3>LLM Quality Assurance Specialist</h3><p class="organization">Handshake &amp; DataAnnotation · Remote</p><p>Evaluate approximately 50 STEM outputs monthly for accuracy, readability, and formatting. Identify failure patterns in visual reasoning and structured-data responses.</p></article>
+        <article><p class="date">Jul 2022 — Oct 2023</p><h3>Service Coordinator &amp; Crew Chief</h3><p class="organization">Discount Tire · Fort Collins, CO</p><p>Trained and supervised 3–6 technicians, managed time-sensitive service workflows, and helped more than 20 customers a day.</p></article>
+        <article><p class="date">Oct 2023 — Oct 2025</p><h3>Team Leadership &amp; Community Service</h3><p class="organization">Full-time missionary · Sacramento, CA</p><p>Served as a zone and district leader, mentored teams in goal-setting, and organized weekly community activities for Marshallese members.</p></article>
+      </div>
+    </section>
+    <section class="skills wrap" aria-label="Technical skills">
+      <div class="skills-heading"><p class="eyebrow">My toolkit</p></div>
+      <div class="skills-window" tabindex="0" aria-label="Skills showcase. Focus here to pause scrolling.">
+        <div class="skills-track"><ul class="skills-set"><li>Python</li><li>JavaScript</li><li>HTML / CSS</li><li>SQL / MySQL</li><li>Go</li><li>Flask</li><li>pytest</li><li>Git</li><li>NumPy / Pandas</li><li>Polars</li><li>Matplotlib</li><li>Codex</li><li>C# <small>learning</small></li></ul></div>
+      </div>
+    </section>
+    <section class="contact-section wrap" id="contact" aria-labelledby="contact-title"><p class="eyebrow">Let’s connect</p><h2 id="contact-title">Have something<br><em>worth building?</em></h2><p>I’d love to connect about software internships, thoughtful projects, and opportunities to keep learning.</p><div class="contact-links"><a class="email" href="mailto:samgeyser@gmail.com">samgeyser@gmail.com <span aria-hidden="true">↗</span></a><button id="copy-email" class="copy" aria-label="Copy email address">Copy email</button><span class="quiet small" id="copy-status" role="status"></span></div><div class="socials"><a href="https://github.com/SMGeyser" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://linkedin.com/in/samuel-geyser-396847393" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="Samuel_Geyser_Resume.pdf" download>Résumé ↓</a></div></section>
+  </main>
+  <footer class="footer wrap"><span>© <span id="year">2026</span> Samuel Geyser</span><span>Built with curiosity. Kept simple.</span><a href="#">Back to top ↑</a></footer>
+  <dialog id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-inner"><button id="close-dialog" class="close" aria-label="Close project details">×</button><div id="dialog-content"></div></div></dialog>
+</body>
+</html>

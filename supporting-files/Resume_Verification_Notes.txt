@@ -1,0 +1,20 @@
+General tech resume - October 14, 2026
+
+Audience: entry-level technology roles, especially software development,
+databases, testing, and AI quality assurance. No employer-specific target.
+
+Verified basis: prior resume PDFs, the user's coursework/testing
+confirmations, project source files, and the portfolio source review.
+Dates, education, contact information, and experience metrics retained.
+
+Current work is labeled: UnitLog in development, Dynamix local MVP,
+C# currently learning, and current coursework in progress.
+UnitLog uses Python/Flask/MySQL rather than the planned Go direction.
+AI evaluation is not presented as model training or ML engineering.
+
+Four projects selected for implementation, database, and testing evidence.
+Canvas integration planning and UI prototypes omitted to keep one page.
+Missionary leadership is retained in a shortened service section.
+
+Validation: one-page PDF, selectable text, working embedded contact/repo
+links, visual layout inspection, and matching portfolio download bytes.

@@ -1,0 +1,60 @@
+Portfolio content review — October 14, 2026
+
+The initial scan reviewed nine local Git checkouts, representing eight
+distinct repositories. The nested CSE 110 checkout duplicates the same
+repository. CSE 290R was added during the follow-up repository update.
+
+Repository coverage in the site:
+UnitLog: UnitLog
+cse210: C# Journal & Classes
+canvas-lms: Canvas LMS Exploration
+cse111: CRUX Encounter Engine
+itm220: D&D Relational Repository
+wdd131: Dynamic Character Stats
+cse110: Python Foundations
+wdd130: Web Design Foundations
+cse290r: Moodflow, Lumina, AI workflows, and Canvas integration planning
+
+Follow-up repository update:
+CSE 290R is now a Git repository with origin
+https://github.com/SMGeyser/cse290r.git. Its locally recorded origin/main
+matches the checked-out source. Project links target tracked directories
+moodflow/, donkey/, codebase-memory/, resume-builder/, and study-agent/,
+plus the tracked calendar integration plan. The Canvas fork link is retained.
+Live GitHub reachability could not be checked through the local Git network
+connection, so links are based on the configured origin and recorded branch.
+
+Additional school-folder work:
+Dynamix (CSE 199), Moodflow/AuraWave, Lumina, AI workflow skills (CSE 290R),
+Data Science Studies (DS 250), Scientific Computing (PH 135), and
+BYU–I Adventures (CSE 170). Tiny self-learning C++ exercises were not
+used as a skills claim because the user previously said they had no
+C++ experience. Course templates are described as learning collections.
+
+Resumes:
+Reviewed available resume PDFs from Downloads and the September 23
+resume chat output folder. Used the latest confirmed 3.99 GPA and
+December 2028 expected graduation. The portfolio download now uses
+the general tech resume created October 14 from these verified facts
+and the reviewed project evidence, replacing the original September PDF.
+
+Chat evidence:
+Create resume optimization skill; Refine software internship resume;
+Map Druid App Structure; Build the music app; UnitLog implementation
+history, plus the available chat summaries for coursework and planning.
+Chats accessible through Codex were used. This review does not claim
+access to every ChatGPT conversation in the user's account.
+
+Corrections and scope:
+UnitLog's local Flask/Python implementation is under _trials/aug_sept.
+Earlier resumes describe a planned Go backend; the portfolio uses
+the current Flask implementation and distinguishes that plan.
+Canvas is an upstream Instructure project. The user's navigation and
+integration planning are attributed; the planned add-on is not called
+shipped. Dynamix is verified locally and is not claimed deployed.
+Local-only projects have no invented GitHub or live-demo links.
+AI evaluation experience is not described as training ML models.
+
+The website contains curated professional content, not raw chats,
+private coursework data, credentials, or copies of source repositories.
+It is an interactive snapshot, not an automatic private-file sync.

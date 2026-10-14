@@ -1,0 +1,76 @@
+Samuel Geyser
+
+samgeyser@gmail.com | (970) 218-0851 | Rexburg, ID
+
+github.com/SMGeyser | linkedin.com/in/samuel-geyser-396847393
+
+Computer Science student with project experience in web applications, relational databases, and Python testing. Hands-on experience evaluating AI outputs, using AI-assisted development tools, and leading service teams.
+
+EDUCATION
+
+Brigham Young University-Idaho
+
+B.S. Computer Science, Minor in AI Engineering | Expected December 2028 | GPA: 3.99/4.00
+
+Completed: Programming with Functions, SQL, Dynamic Web Fundamentals, Computer Systems.
+In progress: Programming with Classes, Data Science Programming, AI in Software Development.
+
+TECHNICAL SKILLS
+
+Languages: Python, JavaScript, Go, SQL, HTML/CSS; C# (currently learning)
+
+Development: Flask, MySQL, Git, Codex, pytest, Python assertions; AWS (database project)
+
+Data: NumPy, Pandas, Polars, Matplotlib, Jupyter Notebook, relational database design
+
+SOFTWARE PROJECTS
+
+Dynamix | Go, MySQL, JavaScript | Local MVP
+
+- Developed a responsive Druid character manager with private accounts, session tracking, inventory, and JSON export.
+
+- Separated rules logic from storage and handlers; added versioned migrations, action history, and guarded undo.
+
+UnitLog | Python, Flask, MySQL | In development
+
+https://github.com/SMGeyser/UnitLog
+
+- Developing a rental-property maintenance app for property-specific tasks, priorities, assignments, and updates.
+
+- Prototype includes API routes and versioned schema migrations for accounts, properties, leases, and work orders.
+
+D&D Relational Repository | MySQL, AWS, Python/Streamlit
+
+https://github.com/SMGeyser/itm220
+
+- Designed and deployed a third-normal-form database using AWS for characters, equipment, and campaign data; built a viewer for character features and custom items.
+
+CRUX Encounter Engine | Python, JSON, pytest
+
+https://github.com/SMGeyser/cse111
+
+- Built a command-line encounter calculator with JSON creature data and dictionary-based party management; wrote pytest checks for ratings, operations, and error cases.
+
+EXPERIENCE
+
+LLM Quality Assurance Specialist | Handshake and DataAnnotation
+
+Remote | February 2026-Present
+
+- Evaluate approximately 50 STEM outputs monthly for factual correctness, readability, and formatting.
+
+- Identify failure patterns in visual reasoning and structured-data responses to support model improvement.
+
+Service Coordinator and Crew Chief | Discount Tire
+
+Fort Collins, CO | July 2022-October 2023
+
+- Trained and supervised 3-6 technicians, managed time-sensitive workflows, and served 20+ customers daily.
+
+LEADERSHIP & SERVICE
+
+Full-time Missionary | Zone Leader and District Leader
+
+The Church of Jesus Christ of Latter-day Saints | Sacramento, CA | October 2023-October 2025
+
+- Mentored teams in goal-setting and personal development; organized weekly activities for Marshallese members.
