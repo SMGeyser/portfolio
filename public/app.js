@@ -8,6 +8,8 @@
   let lastTrigger;
   const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
+  const arrowIcon = () => '<svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12"/></svg>';
+
   function render() {
     const query = search.value.trim().toLowerCase();
     const filtered = projects.filter(project => {
@@ -18,8 +20,8 @@
     list.innerHTML = filtered.map(project => `
       <article class="project-row">
         <div><h3 class="project-title"><button data-project="${escape(project.id)}" aria-haspopup="dialog">${escape(project.title)}</button></h3><p class="project-desc">${escape(project.description)}</p></div>
-        <div class="project-meta"><div class="project-tech">${project.tech.map(escape).join(' / ')}</div><span class="project-state">${escape(project.status)}</span>${project.repo ? `<a class="project-repo" href="${escape(project.repo)}" target="_blank" rel="noopener noreferrer" aria-label="${escape(project.title)} on GitHub">GitHub ↗</a>` : ''}</div>
-        <span class="project-arrow" aria-hidden="true">↗</span>
+        <div class="project-meta"><div class="project-tech">${project.tech.map(escape).join(' / ')}</div><span class="project-state">${escape(project.status)}</span>${project.repo ? `<a class="project-repo" href="${escape(project.repo)}" target="_blank" rel="noopener noreferrer" aria-label="${escape(project.title)} on GitHub">GitHub ${arrowIcon()}</a>` : ''}</div>
+        <span class="project-arrow" aria-hidden="true">${arrowIcon()}</span>
       </article>`).join('');
     document.querySelector('#empty').hidden = filtered.length > 0;
     document.querySelector('#result-count').textContent = query ? `${filtered.length ? 'Projects matching' : 'No projects match'} “${search.value.trim()}”` : activeFilter === 'Featured' ? 'Selected projects' : activeFilter === 'All' ? 'Project collection' : `${activeFilter} projects`;
@@ -37,7 +39,7 @@
     const project=projects.find(project => project.id === trigger.dataset.project);
     lastTrigger=trigger;
     const sourceLinks=[...(project.repo ? [{label:project.repoLabel || 'View repository',url:project.repo}] : []),...(project.relatedLinks || [])];
-    document.querySelector('#dialog-content').innerHTML=`<p class="eyebrow">${escape(project.status)}</p><h2 id="dialog-title">${escape(project.title)}</h2><div class="dialog-tags">${project.tech.map(tech => `<span>${escape(tech)}</span>`).join('')}</div><p>${escape(project.overview)}</p><h3>What’s inside</h3><ul>${project.features.map(feature => `<li>${escape(feature)}</li>`).join('')}</ul><h3>What I’m learning</h3><p>${escape(project.takeaway)}</p><p class="dialog-note">${escape(project.note)}</p>${sourceLinks.length ? `<div class="dialog-links">${sourceLinks.map(link => `<a class="text-link" href="${escape(link.url)}" target="_blank" rel="noopener noreferrer">${escape(link.label)} ↗</a>`).join('')}</div>` : ''}`;
+    document.querySelector('#dialog-content').innerHTML=`<p class="eyebrow">${escape(project.status)}</p><h2 id="dialog-title">${escape(project.title)}</h2><div class="dialog-tags">${project.tech.map(tech => `<span>${escape(tech)}</span>`).join('')}</div><p>${escape(project.overview)}</p><h3>What’s inside</h3><ul>${project.features.map(feature => `<li>${escape(feature)}</li>`).join('')}</ul><h3>What I’m learning</h3><p>${escape(project.takeaway)}</p><p class="dialog-note">${escape(project.note)}</p>${sourceLinks.length ? `<div class="dialog-links">${sourceLinks.map(link => `<a class="text-link" href="${escape(link.url)}" target="_blank" rel="noopener noreferrer">${escape(link.label)} ${arrowIcon()}</a>`).join('')}</div>` : ''}`;
     dialog.showModal();dialog.scrollTop=0;document.body.classList.add('dialog-open');
     document.querySelector('#close-dialog').focus();
   });
